@@ -1,0 +1,13 @@
+**Recommended PHP Version 5.6, 7.4**
+
+**Admin Login Details**
+
+Email   : khushi24@mail.com
+Password: Password@123
+
+
+***You need to configure according to your own dir-> "admin\include\init.php"***
+
+***You need to configure according to your own dir-> "admin\include\init.php"***
+
+***You need to configure according to your own dir-> "admin\include\init.php"***

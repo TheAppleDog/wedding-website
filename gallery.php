@@ -1,0 +1,67 @@
+<?php include 'admin/include/init.php'; ?>
+
+<?php 
+    $blogEvent = EventWedding::getEventBlogs();
+ ?>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Inspiration Couples</title>
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+<script src="https://kit.fontawesome.com/741424920c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+       <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>   
+ <link
+      rel="stylesheet"href="https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="include/footer.css">
+<link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <style> 
+     
+    </style>
+</head>
+<body>
+<?php
+include "include/nav.php";
+?>
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h4 class="h2 text-center mb-0"><b>THE LATEST INSPIRATION</b></h4>
+            <p class="text-muted text-center" style="font-size:18px;">Discover the best ideas, tips 🎉 and articles 💡 to inspire your wedding 💒.</p>
+           <br><br>
+        </div>
+           <div class="card-columns">
+            <?php foreach($blogEvent as $blog_item) : ?>
+               <div class="card">
+                <img class="card-img-top" src="admin/<?= $blog_item->preview_image_picture();?>" alt="Card image cap">
+                <div class="card-body">
+                    <a style="color:black;" href="wedding_details.php?id=<?= $blog_item->id; ?>" class="btn-stamp">
+                        <h6 class="card-title mt-0 mb-0 text-center font-weight-bold font-custom text-uppercase" style="color:black;"><?= $blog_item->title; ?></h6>
+                        <p class="card-text mt-0 mb-0 text-center color_gray" style="color:black;"><?= $blog_item->wedding_type; ?></p>
+                        <p class="card-text mt-0 mb-0 text-center color_light text-capitalize" style="color:black;"><i class="mdi mdi-map-marker"></i>
+                            <?= $blog_item->location; ?></p>
+                    </a>
+                </div>
+            </div> 
+            <?php endforeach; ?>
+            <!-- <a href="real-weddings.php" class="btn btn-lg btn-block btn-explore">EXPLORE MORE INSPIRATION</a> -->
+        </div>       
+    </div>
+</div></div><br><br><br><br>
+<?php include 'include/footer.php'; ?>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

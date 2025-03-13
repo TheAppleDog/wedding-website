@@ -1,0 +1,110 @@
+body {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0%;
+  width: 100%;
+  margin-top: 4%;
+  overflow-x: hidden;
+  background: #f1f1f1;
+  font-size: 14px;
+}
+
+.navbar-light .navbar-brand {
+  color: #1a1a1a;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.navbar {
+  font-weight: bold;
+  padding: 10px;
+  font-style: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+
+li.nav-item > a.nav-link {
+  color: black !important;
+  font-weight: bold !important;
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+li.nav-item > a.nav-link:hover {
+  color: #b52d2d !important;
+}
+
+a.btn.btn-sm.my-2.my-sm-0.mr-2.loginbtn {
+  background: #FF3BB7;
+  font-size: 16px;
+  color: white;
+  font-weight:bold;
+  padding: 5px;
+  border: 2px solid transparent;
+  width: 87px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition effect */
+}
+/* Add shadow to the button */
+a.btn.btn-sm.my-2.my-sm-0.mr-2.loginbtn {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+a.btn.btn-sm.my-2.my-sm-0.mr-2.loginbtn:hover {
+  background: #fff;
+  border: 4px solid #FF3B77;
+  color: #000000;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increase the shadow on hover */
+}
+
+.navbar-brand {
+  margin-left: 20px;
+  width: 0.1px;
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.navbar-brand:hover {
+  color: #b52d2d;
+}
+
+ul {
+  display: flex;
+  width: 70%;
+  height: 10vh;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+li {
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 60px;
+  margin: auto;
+}
+li:hover {  
+  color: #ff3bb7;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #000000;
+  font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+.shameless-plug {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  padding: 8px 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+.active-marker {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px; /* Height of the active border */
+    background-color: #FF3BB7; /* Color of the active border */
+    transition: left 0.5s ease, width 0.5s ease; /* Smooth transition for movement and width change */
+}
